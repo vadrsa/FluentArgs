@@ -31,21 +31,36 @@ namespace UnitTests
 				str.Arg(nameof(str)).IsNotNull("Argument {0} cannot be null"));
 		}
 
+		[TestMethod]
+		public void IsNotDefault_MustThrowIfDefault()
+		{
+			Assert.ThrowsException<ArgumentException>(
+				() => 0.Arg("test int").IsNotDefault());
+
+			Assert.ThrowsException<ArgumentException>(
+				() => 0.Arg("test int").IsNotDefault("Argument {0} must not be default"));
+		}
+
+		[TestMethod]
+		public void IsNotDefault_MustNotThrowIfNotDefault()
+		{
+			AssertExtensions.DoesNotThrowException(
+				() => 1.Arg("test int").IsNotDefault());
+
+			AssertExtensions.DoesNotThrowException(
+				() => 1.Arg("test int").IsNotDefault("Argument {0} must not be default"));
+		}
 
 		[TestMethod]
 		public void Is_MustNotThrowIfReturnsTrue()
 		{
 			Func<int, bool> predicate = _ => true;
 
-			try
-			{
-				0.Arg("test int").Is(predicate);
-				0.Arg("test int").Is(predicate, "Argument {0} must pass the predicate");
-			}
-			catch (Exception ex)
-			{
-				Assert.Fail("Expected no exception, but got: " + ex.Message);
-			}
+			AssertExtensions.DoesNotThrowException(
+				() => 0.Arg("test int").Is(predicate));
+
+			AssertExtensions.DoesNotThrowException(
+				() => 0.Arg("test int").Is(predicate, "Argument {0} must pass the predicate"));
 		}
 
 		[TestMethod]

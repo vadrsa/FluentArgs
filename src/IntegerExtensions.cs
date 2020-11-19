@@ -15,7 +15,7 @@ namespace Microsoft.Extensions.Args
 		/// <param name="someInt">The integer to compare to</param>
 		[DebuggerStepThrough]
 		public static Argument<int> IsGreaterThan(this Argument<int> argument, int someInt) =>
-			argument.IsGreaterThan(someInt, "Integer argument {0} must be greater than {1}.");
+			argument.IsGreaterThan(someInt, "Integer argument '{0}' must be greater than {1}.");
 
 		/// <summary>
 		/// Validate that the argument is greater than some integer
@@ -41,7 +41,7 @@ namespace Microsoft.Extensions.Args
 		/// <param name="someInt">The integer to compare to</param>
 		[DebuggerStepThrough]
 		public static Argument<int> IsGreaterThanOrEqualTo(this Argument<int> argument, int someInt) =>
-			argument.IsGreaterThanOrEqualTo(someInt, "Integer argument {0} must be greater than or equal to {1}.");
+			argument.IsGreaterThanOrEqualTo(someInt, "Integer argument '{0}' must be greater than or equal to {1}.");
 
 		/// <summary>
 		/// Validate that the argument is greater than or equal to some integer
@@ -67,7 +67,7 @@ namespace Microsoft.Extensions.Args
 		/// <param name="someInt">The integer to compare to</param>
 		[DebuggerStepThrough]
 		public static Argument<int> IsLessThan(this Argument<int> argument, int someInt) =>
-			argument.IsLessThan(someInt, "Integer argument {0} must be greater than {1}.");
+			argument.IsLessThan(someInt, "Integer argument '{0}' must be greater than {1}.");
 
 		/// <summary>
 		/// Validate that the argument is less than some integer
@@ -93,7 +93,7 @@ namespace Microsoft.Extensions.Args
 		/// <param name="someInt">The integer to compare to</param>
 		[DebuggerStepThrough]
 		public static Argument<int> IsLessThanOrEqualTo(this Argument<int> argument, int someInt) =>
-			argument.IsLessThanOrEqualTo(someInt, "Integer argument {0} must be greater than or equal to {1}.");
+			argument.IsLessThanOrEqualTo(someInt, "Integer argument '{0}' must be greater than or equal to {1}.");
 
 		/// <summary>
 		/// Validate that the argument is less than or equal to some integer
