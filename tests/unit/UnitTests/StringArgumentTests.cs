@@ -32,6 +32,26 @@ namespace UnitTests
 				() => emptyStr.Arg(nameof(emptyStr)).IsNotNullOrEmpty("Argument {0} must fail because it is empty"));
 		}
 
+		[TestMethod]
+		public void IsNotNullOrEmpty_MustNotThrowIfNotEmpty()
+		{
+			string str1 = "    ";
+
+			AssertExtensions.DoesNotThrowException(() =>
+				str1.Arg(nameof(str1)).IsNotNullOrEmpty());
+
+
+			AssertExtensions.DoesNotThrowException(() =>
+				str1.Arg(nameof(str1)).IsNotNullOrEmpty("Argument {0} cannot be null or empty"));
+
+			string str2 = "test";
+
+			AssertExtensions.DoesNotThrowException(() =>
+				str2.Arg(nameof(str2)).IsNotNullOrEmpty());
+
+			AssertExtensions.DoesNotThrowException(() =>
+				str2.Arg(nameof(str2)).IsNotNullOrEmpty("Argument {0} cannot be null or empty"));
+		}
 
 		[TestMethod]
 		public void IsNotNullOrWhitespace_ThrowIfNull()
@@ -67,6 +87,19 @@ namespace UnitTests
 
 			Assert.ThrowsException<ArgumentException>(
 				() => wsStr.Arg(nameof(wsStr)).IsNotNullOrWhitespace("Argument {0} must fail because it is whitespace"));
+		}
+
+		[TestMethod]
+		public void IsNotNullOrWhitespace_MustNotThrowIfNotEmpty()
+		{
+			string str = "  test  ";
+
+			AssertExtensions.DoesNotThrowException(() =>
+				str.Arg(nameof(str)).IsNotNullOrWhitespace());
+
+
+			AssertExtensions.DoesNotThrowException(() =>
+				str.Arg(nameof(str)).IsNotNullOrWhitespace("Argument {0} cannot be null or empty, or whitespace"));
 		}
 	}
 }

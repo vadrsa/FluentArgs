@@ -13,12 +13,22 @@ namespace UnitTests
 			string nullStr = null;
 
 			Assert.ThrowsException<ArgumentNullException>(() =>
-				nullStr.Arg(nameof(nullStr)).IsNotNull(), 
-				"IsNotNull must throw an exception if the argument value is null");
+				nullStr.Arg(nameof(nullStr)).IsNotNull());
 
 			Assert.ThrowsException<ArgumentNullException>(() =>
-				nullStr.Arg(nameof(nullStr)).IsNotNull("Argument {0} cannot be null"),
-				"IsNotNull must throw an exception if the argument value is null");
+				nullStr.Arg(nameof(nullStr)).IsNotNull("Argument {0} cannot be null"));
+		}
+
+		[TestMethod]
+		public void IsNotNull_MustNotThrowIfNotNull()
+		{
+			string str = "test";
+
+			AssertExtensions.DoesNotThrowException(() =>
+				str.Arg(nameof(str)).IsNotNull());
+
+			AssertExtensions.DoesNotThrowException(() =>
+				str.Arg(nameof(str)).IsNotNull("Argument {0} cannot be null"));
 		}
 
 
