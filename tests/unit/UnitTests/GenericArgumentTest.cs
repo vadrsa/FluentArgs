@@ -43,9 +43,11 @@ namespace UnitTests
 		{
 			Func<int, bool> predicate = _ => false;
 
-			Assert.ThrowsException<ArgumentException>(() => 0.Arg("test int").Is(predicate));
+			Assert.ThrowsException<ArgumentException>(
+				() => 0.Arg("test int").Is(predicate));
 
-			Assert.ThrowsException<ArgumentException>(() => 0.Arg("test int").Is(predicate, "Argument {0} must fail the predicate"));
+			Assert.ThrowsException<ArgumentException>(
+				() => 0.Arg("test int").Is(predicate, "Argument {0} must fail the predicate"));
 		}
 	}
 }

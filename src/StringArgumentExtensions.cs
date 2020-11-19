@@ -38,7 +38,7 @@ namespace Microsoft.Extensions.Args
 		/// <param name="argument">The string argument to validate</param>
 		[DebuggerStepThrough]
 		public static Argument<string> IsNotNullOrWhitespace(this Argument<string> argument) => 
-			argument.IsNotNullOrEmpty("String argument {0} cannot be null, empty, or consist only of white-space characters.");
+			argument.IsNotNullOrWhitespace("String argument {0} cannot be null, empty, or consist only of white-space characters.");
 
 		/// <summary>
 		/// Validate that the argument is not null, empty and doesn't consist only of white-space characters
