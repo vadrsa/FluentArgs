@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Davit Asryan</Authors>
+    <Description>Argument validation utilities with a fluent API</Description>
+    <PackageProjectUrl>https://github.com/vadrsa/FluentArgs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vadrsa/FluentArgs</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <PackageId>Utilities.FluentArgs</PackageId>
   </PropertyGroup>
 
 </Project>
