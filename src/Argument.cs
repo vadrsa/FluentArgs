@@ -3,6 +3,7 @@
 	public class Argument {
 		public static void Inline(params Argument[] arguments) { }
 	}
+	
 	/// <summary>
 	/// Represents an argument to validate
 	/// </summary>
