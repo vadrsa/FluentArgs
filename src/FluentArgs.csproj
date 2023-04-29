@@ -9,9 +9,10 @@
     <RepositoryType>Github</RepositoryType>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.1.0</Version>
     <PackageId>FluentArgs</PackageId>
+    <PackageVersion>0.2.0</PackageVersion>
+    <Title>FluentArgs</Title>
   </PropertyGroup>
 
 </Project>

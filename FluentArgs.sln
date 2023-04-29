@@ -15,6 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C5DA6ACC-58F7-4291-B1B3-78A45C21E4FE}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\build-and-test.yml = .github\workflows\build-and-test.yml
+		.github\workflows\pubslih-nuget.yml = .github\workflows\pubslih-nuget.yml
 	EndProjectSection
 EndProject
 Global
