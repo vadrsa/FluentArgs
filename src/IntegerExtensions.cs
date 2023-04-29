@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace Microsoft.Extensions.Args
+namespace FluentArgs
 {
 	/// <summary>
 	/// Extension methods for <see cref="Argument{int}"/>

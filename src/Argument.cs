@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Extensions.Args
+﻿namespace FluentArgs
 {
 	public class Argument {
 		public static void Inline(params Argument[] arguments) { }

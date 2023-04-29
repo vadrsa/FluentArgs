@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Microsoft.Extensions.Args
+namespace FluentArgs
 {
 	/// <summary>
 	/// Extension methods for generic <see cref="Argument{T}"/>

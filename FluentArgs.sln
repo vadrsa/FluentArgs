@@ -1,0 +1,46 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentArgs", "src/FluentArgs.csproj", "{1D8572C7-878A-4CA5-8946-4B1D75E667DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A7C62089-A179-4FD6-956C-4DA5375ABB97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E477B7A0-94E8-44F6-A791-4FA067E76DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentArgs.Tests", "tests\FluentArgs.Tests\FluentArgs.Tests.csproj", "{AB45385C-6398-4067-A8B9-F02908287BF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{005E8920-58ED-4DF2-901E-85D5F99B32E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{C5DA6ACC-58F7-4291-B1B3-78A45C21E4FE}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\runTests.yml = .github\workflows\runTests.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D8572C7-878A-4CA5-8946-4B1D75E667DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8572C7-878A-4CA5-8946-4B1D75E667DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8572C7-878A-4CA5-8946-4B1D75E667DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8572C7-878A-4CA5-8946-4B1D75E667DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB45385C-6398-4067-A8B9-F02908287BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB45385C-6398-4067-A8B9-F02908287BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB45385C-6398-4067-A8B9-F02908287BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB45385C-6398-4067-A8B9-F02908287BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFEC5AD4-889F-4A4E-BB15-AEAF1C477285}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D8572C7-878A-4CA5-8946-4B1D75E667DB} = {A7C62089-A179-4FD6-956C-4DA5375ABB97}
+		{AB45385C-6398-4067-A8B9-F02908287BF7} = {E477B7A0-94E8-44F6-A791-4FA067E76DEE}
+		{C5DA6ACC-58F7-4291-B1B3-78A45C21E4FE} = {005E8920-58ED-4DF2-901E-85D5F99B32E4}
+	EndGlobalSection
+EndGlobal
