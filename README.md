@@ -1,4 +1,4 @@
-![Build and Test](https://github.com/vadrsa/FluentArgs/actions/workflows/runTests.yml/badge.svg?branch=master)](https://github.com/vadrsa/FluentArgs/actions/workflows/runTests.yml)
+[![Build and Test](https://github.com/vadrsa/FluentArgs/actions/workflows/runTests.yml/badge.svg?branch=master)](https://github.com/vadrsa/FluentArgs/actions/workflows/runTests.yml)
 
 # FluentArgs
 Argument validation utilities with a fluent API
