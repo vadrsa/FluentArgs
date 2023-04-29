@@ -1,4 +1,4 @@
-[![Build and Test](https://github.com/vadrsa/FluentArgs/actions/workflows/build-and-test.yml/badge.svg?branch=master)](https://github.com/vadrsa/FluentArgs/actions/workflows/build-and-test.yml)[![NuGet Version](https://buildstats.info/nuget/Utilities.FluentArgs?includePreReleases=true)](https://www.nuget.org/packages/Utilities.FluentArgs/)
+[![Build and Test](https://github.com/vadrsa/FluentArgs/actions/workflows/build-and-test.yml/badge.svg?branch=master)](https://github.com/vadrsa/FluentArgs/actions/workflows/build-and-test.yml) [![NuGet Version](https://buildstats.info/nuget/Utilities.FluentArgs?includePreReleases=true)](https://www.nuget.org/packages/Utilities.FluentArgs/)
 
 # FluentArgs
 Argument validation utilities with a fluent API
